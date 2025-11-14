@@ -20,7 +20,6 @@ public class Resumen {
         this.autores = autores;
         this.cuerpo =cuerpo;
         this.pclaves = pclaves;
-        
     }
     
 }
