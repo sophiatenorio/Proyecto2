@@ -9,47 +9,47 @@ package proyecto.pkg2;
  * @author sophia
  */
 public class Lista {
-Nodo primero;
+    Nodo primero;
 
-public Lista(){
-    primero = null;   
-}
+    public Lista(){
+        primero = null;   
+    }
 
-public void instertar(Resumen dato){
-    Nodo nuevo = new Nodo(dato);
-    if(this.primero == null){
-    this.primero = nuevo;
-}else{
+    public void instertar(Resumen dato){
+        Nodo nuevo = new Nodo(dato);
+        if(this.primero == null){
+        this.primero = nuevo;
+    }else{
+            Nodo aux = this.primero;
+            while(aux.sig != null){
+                aux = aux.sig;
+            }
+            aux.sig = nuevo;
+        }
+    }
+
+
+    public void instertar(Resumen dato, String clave){
+        Nodo nuevo = new Nodo(dato);
+        nuevo.clave = clave;
+        if(this.primero == null){
+        this.primero = nuevo;
+    }else{
+            Nodo aux = this.primero;
+            while(aux.sig != null){
+                aux = aux.sig;
+            }
+            aux.sig = nuevo;
+        }
+    }
+
+    public Nodo buscar(String titulo){
         Nodo aux = this.primero;
-        while(aux.sig != null){
+        while(aux != null && !aux.dato.titulo.equals(titulo)){
             aux = aux.sig;
         }
-        aux.sig = nuevo;
+        return aux;
     }
-}
-
-
-public void instertar(Resumen dato, String clave){
-    Nodo nuevo = new Nodo(dato);
-    nuevo.clave = clave;
-    if(this.primero == null){
-    this.primero = nuevo;
-}else{
-        Nodo aux = this.primero;
-        while(aux.sig != null){
-            aux = aux.sig;
-        }
-        aux.sig = nuevo;
-    }
-}
-
-public Nodo buscar(String titulo){
-    Nodo aux = this.primero;
-    while(aux != null && !aux.dato.titulo.equals(titulo)){
-        aux = aux.sig;
-    }
-    return aux;
-}
 
 
 }
