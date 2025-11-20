@@ -9,17 +9,21 @@ package proyecto.pkg2;
  * @author sophia
  */
 public class Resumen {
-    
     public String titulo;
     public String[] autores;
     public String cuerpo;
     public String[] pclaves;
+    
+    
+    public String palabra_clave_principal;
+    
     
     public Resumen(String titulo, String[] autores, String cuerpo, String[] pclaves){
         this.titulo = titulo;
         this.autores = autores;
         this.cuerpo =cuerpo;
         this.pclaves = pclaves;
+        palabra_clave_principal = "";
     }
     
 }
