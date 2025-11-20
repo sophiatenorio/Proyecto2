@@ -11,9 +11,10 @@ package proyecto.pkg2;
 public class Nodo {
     Resumen dato;
     Nodo sig;
-    
+    String clave;
     public Nodo(Resumen dato){
         this.dato = dato;
         this.sig = null;
+        this.clave = "";
     }
 }
