@@ -13,7 +13,7 @@ package proyectoresumenes;
  * Ahora devuelve un array nativo de Java para evitar java.util.ArrayList.
  */
 public class AVLTreePalabraClave extends AVLTree {
-
+ 
     public AVLTreePalabraClave() {
         super();
     }
