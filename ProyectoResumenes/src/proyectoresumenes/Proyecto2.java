@@ -4,17 +4,20 @@
  */
 package proyectoresumenes;
 
+import proyectoresumenes.Interfaces.Principal;
 /**
  *
- * @author leonardo
+ * @author sophia
  */
-public class ProyectoResumenes {
-
+public class Proyecto2 {
     /**
-     * @param args the command line arguments
+     * Punto de entrada principal.
      */
     public static void main(String[] args) {
-        // TODO code application logic here      
+        
+//        Principal p = new Principal(new AVLTreeAutor(), new AVLTreePalabraClave(), new TablaHashResumenes(101));
+        Principal p = new Principal(null, null, null);
+
     }
     
 }
